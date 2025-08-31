@@ -29,7 +29,7 @@ label start:
 
     mc "Thank you for the meal."
 
-    "A delicacy unique to our town, custom made by Grandpa. Of course, only made from the town’s prized fish."
+    "A delicacy unique to our town, custom made by Grandfather. Of course, only made from the town’s prized fish."
 
     g "Eat up."
 
@@ -40,30 +40,20 @@ label start:
     scene empty plate
 
     g "I have something for you,"
-    "Your father left it behind for you"
+    "Something your father left behind."
 
     mc "...Father?"
 
-    g "Yes. I know he left when you were young, and I know it’s been a while, but rest assured, this is for you."
+    g "Yes. I know he left this world when you were young, but rest assured, this is for you."
 
-    "Grandpa slides a box over. It’s small and quite thin. A frail, feeble box. It’s years old. Maybe even decades. It’s dusty."
+    "Grandfather slides a small, thin box over. It’s years old, maybe even decades, and it’s covered in dust."
 
     g "It’s yours now. Keep it safe."
 
-    $ player_name = renpy.input("Scrawled across the top is, 'To my dearest child,'")
-
+    $ player_name = renpy.input("Scrawled across the top in cursive letters are the words: 'To my dearest child,'")
     $ player_name = player_name.strip()
-    # The .strip() instruction removes any extra spaces the player 
-    # may have typed by accident.
-
-    #  If the player can't be bothered to choose a name, then we
-    #  choose a suitable one for them:
     if player_name == "":
         $ player_name="Greta"
-
-# And get a nostalgic sigh from Seasons of Sakura fans!
-    
-# Now the other characters in the game can greet the player.
   
     "Scrawled across the top is, 'To my dearest child, $(mc)'"
 
