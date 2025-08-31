@@ -4,8 +4,9 @@
 # name of the character.
 
 define e = Character("Grandfather")
-define e = Character("Uncle")
+define u = Character("Uncle")
 define e = Character("Cousin")
+define mc = Character("You")
 
 
 # The game starts here.
