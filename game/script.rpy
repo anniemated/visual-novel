@@ -42,7 +42,7 @@ label start:
     g "I have something for you."
     "A gift your father left behind."
 
-    mc "...Father?"
+    mc "...Father?"d
 
     g "Yes. I know he left this world when you were young, but rest assured, this is for you."
 
