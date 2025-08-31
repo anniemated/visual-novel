@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+define mc = Character("???")
 define g = Character("Grandfather")
 define u = Character("Uncle")
 define c = Character("Cousin")
-define mc = Character("You")
 define a = Character("Aunt")
 
 
@@ -17,28 +17,6 @@ label start:
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-
-    "I've been thinking about changing my name."
-
-    # The phrase in the brackets is the text that the game will display to prompt 
-    # the player to enter the name they've chosen.
-
-    $ player_name = renpy.input("What is your name, Magical Boy?")
-
-    $ player_name = player_name.strip()
-    # The .strip() instruction removes any extra spaces the player 
-    # may have typed by accident.
-
-    #  If the player can't be bothered to choose a name, then we
-    #  choose a suitable one for them:
-    if player_name == "":
-        $ player_name="Shuji"
-
-# And get a nostalgic sigh from Seasons of Sakura fans!
-    
-# Now the other characters in the game can greet the player.
-  
-    e "Pleased to meet you, %(player_name)s!"
 
     scene bg room
 
@@ -61,7 +39,7 @@ label start:
 
     scene empty plate
 
-    g "I have something for you."
+    g "I have something for you,"
     "Your father left it behind for you"
 
     mc "...Father?"
@@ -72,12 +50,24 @@ label start:
 
     g "It’s yours now. Keep it safe."
 
+    $ player_name = renpy.input("Scrawled across the top is, 'To my dearest child,'")
 
-    # These display lines of dialogue.
+    $ player_name = player_name.strip()
+    # The .strip() instruction removes any extra spaces the player 
+    # may have typed by accident.
 
-    e "You've created a new Ren'Py game."
+    #  If the player can't be bothered to choose a name, then we
+    #  choose a suitable one for them:
+    if player_name == "":
+        $ player_name="Greta"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+# And get a nostalgic sigh from Seasons of Sakura fans!
+    
+# Now the other characters in the game can greet the player.
+  
+    "Scrawled across the top is, 'To my dearest child, $(mc)'"
+
+
 
     # This ends the game.
 
