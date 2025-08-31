@@ -55,7 +55,7 @@ label start:
     if player_name == "":
         $ player_name="Greta"
   
-    "Scrawled across the top is, 'To my dearest child, $(mc)'"
+    "Scrawled across the top in cursive letters are the words: 'To my dearest child, [mc]..."
 
 
     # This ends the game. This ends the game.
