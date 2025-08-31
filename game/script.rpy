@@ -58,7 +58,6 @@ label start:
     "Scrawled across the top is, 'To my dearest child, $(mc)'"
 
 
-
-    # This ends the game.
+    # This ends the game. This ends the game.
 
     return
