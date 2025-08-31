@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("???")
+define mc = Character("You")
 define g = Character("Grandfather")
 define u = Character("Uncle")
 define c = Character("Cousin")
@@ -39,8 +39,8 @@ label start:
 
     scene empty plate
 
-    g "I have something for you,"
-    "Something your father left behind."
+    g "I have something for you."
+    "A gift your father left behind."
 
     mc "...Father?"
 
