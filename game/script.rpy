@@ -7,6 +7,7 @@ define e = Character("Grandfather")
 define u = Character("Uncle")
 define e = Character("Cousin")
 define mc = Character("You")
+define e = Character("Aunt")
 
 
 # The game starts here.
